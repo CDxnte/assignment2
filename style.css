@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+*{
+	margin:0px;
+	box-sizing: border-box;
+	
+	
+}
+
+.wrapper{
+	height:100%;
+
+
+margin: auto;
+}	
+
+/* navbar  */
+nav ul{
+	list-style-type: none;
+	display: flex;
+	
+
+}
+nav a{
+	text-decoration: none;
+	color:#fffaff;
+	padding:10px;
+	font-family: 'Mukta' , sans-serif;
+	text-transform: uppercase;
+	transition: .15s ease-in;
+}
+nav a:hover{
+	opacity:.75;
+}
+nav{
+	
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width:80%;
+	margin: auto;
+	padding:auto;
+	
+	
+}
+.navbar{
+	background: #3a405a;
+	display: flex;
+	position: fixed;
+	width:100%;
+	height:5%;
+	align-items: center;
+	
+
+}
+nav h1{
+	font-family: 'Kanit', sans-serif;
+	color: #fffaff;
+}
+
+.nav_mob{
+	display: none;
+}
+
+.nav_icon, .fa-xmark{
+	display:none;
+}
+/*  Home Page  */
+
+ #land{
+	background: url('pexels-sushil-ghimire-2062462.jpg');
+	height:600px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position:0px -200px ;
+	
+}
+
+#overlay{
+	height:100%;
+	background-color: rgba(0, 0, 0, 0.377);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+#overlay h1{
+	font-size:75px;
+	color:#fffaff;
+	font-family: 'Kanit' , sans-serif;
+	
+}
+
+span{
+	background-color: #fffaff;
+	color:#3a405a;
+	font-style: italic;
+	padding-right:20px;
+	
+	
+}
+
+
+
+/*  About Page  */
+
+#about{
+	height: max-content;
+	padding:0 0 40px 0;
+	
+
+}
+#content{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width:80%;
+	margin: auto;
+
+}
+.abb{
+	padding-top:70px;
+	display: flex;
+	
+	align-items: center;
+}
+.abb img{
+	display: flex;
+	height: 338px;
+	width: 600px;
+	object-fit: cover;
+	
+	
+}
+.abb p{
+	width:700px;
+	padding:20px;
+	font-size:20px;
+	font-family: 'Monsterrat', sans-serif;
+	
+}
+#content h1{
+	padding:20px;
+	color:#3a405a;
+	font-family: 'Kanit', sans-serif;
+	
+}
+
+/*  Gallery Page  */
+
+#gallery{
+	padding:40px 0 50px 0;
+	height: max-content;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background: #3a405a;
+	
+}
+#g_img{
+	
+	width:80%;
+	margin: auto;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	gap: 10px 10px;
+	align-items: center;
+	justify-content: center;
+
+}
+#g_img img{
+
+	height: 225px;
+	width: 400px;
+	object-fit: cover;
+	transition: .2s ease-in-out;
+	
+}
+#gallery h1{
+	padding:20px;
+	color:#fffaff;
+	font-family: 'Kanit', sans-serif;
+}
+#g_img img:hover{
+	opacity:.55;
+	
+}
+
+/*  Media Queries  */
+
+@media (min-width:1300px) {      
+	
+	#linebreak{
+		display: none;
+	}
+}
+@media (max-width:1299px){
+	.abb img{
+		display: flex;
+		height: 225px;
+		width: 400px;
+		object-fit: cover;
+		
+		
+	}
+	.abb p{
+      width:500px;
+	  font-size:16px;
+	}
+	#g_img img{
+		width:250px;
+		height:141px;
+	}
+}
+
+@media (max-width:1199px) {
+	#land{
+		background: url('pexels-sheila-731217.jpg');
+		background-size:cover;
+		background-repeat: no-repeat;
+		height:600px;
+	}
+}
+
+@media (max-width:768px){
+	nav ul{
+		display: none;
+	}
+	nav {
+		justify-content: center;
+		
+
+
+	}
+	.nav_icon , .fa-xmark{
+		display: block;
+		cursor: pointer;
+		padding:20px;
+		position: absolute;
+	}
+	.fa-xmark{
+		right:70px;
+	
+	}
+	.fa-bars{
+		color:white;
+
+	}
+
+	.nav_mob{
+		position: fixed;
+		background: #fffaff;
+		display: none;
+		
+		justify-content: center;
+		z-index: 1;
+		height: 100%;
+		
+		
+		
+	}
+	
+	.nav_mob a{
+		text-decoration: none;
+		color:#3a405a;
+		padding:10px;
+		font-family: 'Mukta' , sans-serif;
+		text-transform: uppercase;
+		transition: .15s ease-in;
+	}
+	.nav_mob a:hover{
+		opacity:.75;
+	}
+	
+	.nav_mob ul{
+		list-style-type: none;
+		display: block;
+		
+		
+	
+	}
+	.abb{
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	.abb p{
+		text-align: center;
+	}
+	#content h1{
+		text-align: center;
+	}
+	#g_img{
+		grid-template-columns: auto;
+	}
+	#g_img img{
+		height:197px;
+		width:350px;
+	}
+	#land{
+		background: url('pexels-sam-willis-1154619.jpg');
+		background-size:cover;
+		background-repeat: no-repeat;
+		height:600px;
+	}
+}
+
+
+
+@media (max-width:690px){
+	.navbar{
+		background: none;
+	}
+	nav h1{
+		text-align: center;
+	}
+
+
+	
+	
+	
+
+}
+
+@media (max-width:610px){
+	#overlay h1{
+		font-size:3.2rem;
+		text-align: center;
+	}
+
+}

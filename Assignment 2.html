@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<script src="https://kit.fontawesome.com/0fcc5b84fb.js" crossorigin="anonymous"></script>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>AEROLIB</title>
+	<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="nav_mob">
+			<i class="fa-solid fa-xmark"></i>
+			<ul>
+				<li><a href="#land">HOME</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#gallery">Gallery</a></li>
+			
+			</ul>
+
+		</div>
+		<div class="navbar">
+			
+			<div class="nav_icon">
+				<i class="fa-solid fa-bars"></i>
+				
+
+
+			</div>
+			
+			<nav>
+				<h1>
+					AEROLIB
+				</h1>
+				<ul>
+					<li><a href="#land">HOME</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#gallery">Gallery</a></li>
+				
+				</ul>
+
+			</nav>					
+
+		
+		</div>
+		<div id="land">
+			<div id="overlay">
+			<h1>''FOR ALL THINGS<br id="linebreak"><span>AVIATION''</span></h1>
+			</div>
+
+
+
+
+
+
+		</div>
+		<div id="about">
+			
+
+			<div id="content">
+				<h1>An AV-geek's encyclopedia since 1997</h1>
+				<div id="box1" class="abb">
+					<img src="pexels-pixabay-104826.jpg">
+					<p>Aircraft have come a long way since the first successful flight by the Wright brothers in 1903. Today, aircraft come in all shapes and sizes, from small single-engine planes to massive commercial airliners and military jets. Advances in technology have enabled aircraft to fly faster, higher, and farther than ever before. For example, the fastest commercial airliner, the Concorde, was able to fly at speeds of up to 1,350 mph, while modern military jets can reach speeds of over 2,000 mph. In addition to speed, aircraft also have the ability to carry large amounts of cargo and passengers across long distances. The impact of aircraft on travel, commerce, and defense is immeasurable, and they continue to play a vital role in our modern world.</p>
+
+				</div>
+				<div id="box2" class="abb">
+					<img src="pexels-rafael-cosquiere-2064123.jpg">
+					<p>Unmanned aerial vehicles, commonly known as drones, have become increasingly popular in recent years. Originally developed for military applications, drones are now used in a variety of fields such as agriculture, journalism, search and rescue, and even entertainment. They are equipped with cameras and sensors that allow them to capture high-quality aerial images and data. Drones have revolutionized the way we approach tasks such as mapping, surveying, and inspections, making them faster, safer, and more efficient. They have also opened up new opportunities for exploration and discovery, enabling researchers to study remote and hard-to-reach areas. As technology continues to improve, the potential applications for drones will only continue to expand, making them an exciting area of innovation for the future.</p>
+					
+				</div>
+				<div id="box3" class="abb">
+					<img src="pexels-carlos-pernalete-tua-674783.jpg">
+					<p>Air travel is one of the safest forms of transportation, with strict regulations and procedures in place to ensure passenger safety. Before takeoff, planes undergo thorough inspections to check for any mechanical issues or defects. Pilots and air traffic controllers are highly trained professionals who must adhere to strict guidelines and regulations. Additionally, modern planes are equipped with advanced safety features such as automated systems that can detect and prevent potential accidents. In the rare event of an emergency, planes are also equipped with various safety equipment such as emergency slides and life rafts. Overall, the aviation industry places a strong emphasis on safety, and continues to strive for even greater levels of safety and security in air travel.</p>
+					
+				</div>
+
+
+
+
+
+			</div>
+
+
+
+
+
+
+
+
+		</div>
+		<div id="gallery">
+			<h1>Gallery
+			</h1>
+			<div id="g_img">
+				<img src="gallery\pexels-fariz-priandana-11428973.jpg">
+				<img src="gallery\pexels-jon-mishou-9857746.jpg">
+				<img src="gallery\pexels-jon-mishou-12118670.jpg">
+				<img src="gallery\pexels-pixabay-221307.jpg">
+				<img src="gallery\pexels-quintin-gellar.jpg">
+				<img src="gallery\pexels-shoval-zonnis-3769532.jpg">
+			</div>
+		</div>
+	</div>	
+</body>
+
+<script>
+
+    const menu = document.querySelector('.nav_mob');
+	let s = document.querySelector('.fa-bars')
+	let c = document.querySelector('.fa-xmark')
+	let sh = function(){
+		menu.style.display="flex";
+	} 
+	s.addEventListener('click', () => {
+		
+			menu.style.display = 'flex'
+		
+				
+
+			
+		});
+
+		c.addEventListener('click', () => {
+		
+		
+	
+			menu.style.display = 'none'
+
+		
+	});
+	
+
+	
+
+
+
+
+  </script>
+</html>
